@@ -39,7 +39,7 @@ fun WeatherApp() {
         .build()
 
     val weatherService = retrofit.create(WeatherApiService::class.java)
-    val apiKey = "5cdcf11828c78b830592b9a252c231c7" // 발급받은 API 키로 교체
+    val apiKey = "0" // 발급받은 API 키로 교체
 
     // API 호출
     weatherService.getWeather("Seoul", apiKey).enqueue(object : Callback<WeatherData> {
